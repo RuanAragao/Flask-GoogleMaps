@@ -15,6 +15,12 @@ GoogleMaps(app, key="AIzaSyAZzeHhs-8JZ7i18MjFuM35dJHq70n3Hx4")
 
 @app.route("/")
 def mapview():
+    heromap = Map(
+        identifier="hero-map",
+        varname="heromap",
+        lat=-5.0883188,
+        lng=-42.8121686
+    )
     mymap = Map(
         identifier="view-side",  # for DOM element
         varname="mymap",  # for JS object name
